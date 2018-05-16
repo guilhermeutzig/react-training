@@ -46,7 +46,7 @@ Yarn: `yarn global add json-server`
 After this, go to the folder `json/` inside the project and run the command:
 
 `json-server --watch users.json`, this will start the fake API and will give you an URL to work with.
-Probably it will be listed on console, but generally is `http://localhost:3000/icons`.
+Probably it will be listed on console, but generally is `http://localhost:3000/users`.
 
 It's done, now you can simply add a new user to the array or delete all. I made some simple validations comparing users from the fake API and what the user typed on the screen, so create your user and log in!
 
