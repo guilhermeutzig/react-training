@@ -1,0 +1,63 @@
+.profile {
+	display: block;
+	width: 100%;
+
+	&.hover {
+		.layer {
+			opacity: 1;
+			visibility: visible;
+		}
+	}
+
+	.image {
+		position: relative;
+	}
+
+	img {
+		width: 100%;
+		display: block;
+	}
+
+	.content {
+		background-color: $lighter-bg;
+		padding: 10px;
+	}
+
+	.name {
+		color: $title-color;
+		font: {
+			family: $font;
+			size: $text-font-size;
+		}
+		margin: 0;
+	}
+
+	.job {
+		color: $text-color;
+		font: {
+			family: $font;
+			size: $button-font-size;
+		}
+		margin: 0;
+	}
+
+	.layer {
+		opacity: 0;
+		visibility: hidden;
+		position: absolute;
+		height: 100%;
+		width: 100%;
+		top: 0;
+		left: 0;
+		z-index: 2;
+		background-color: $opacity-layer;
+		transition: 300ms ease-in-out;
+
+		.social {
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			transform: translate(-50%, -50%);
+		}
+	}
+}

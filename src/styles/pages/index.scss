@@ -1,0 +1,6 @@
+.index-page {
+    p {
+        @include mainText($text-color);
+        margin-bottom: 30px;
+    }
+}

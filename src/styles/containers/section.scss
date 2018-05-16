@@ -1,0 +1,16 @@
+section {
+	padding-top: 80px;
+	padding-bottom: 100px;
+	border-bottom: 1px solid $section-border;
+	h2 {
+		@include sectionTitle();
+		@include sectionTitleColors($title-color, $light-bg);
+		margin-bottom: 60px;
+	}
+	&[color='dark'] {
+		background-color: $main-bg;
+		h2 {
+			@include sectionTitleColors($white, $lighter-bg);
+		}
+	}
+}

@@ -1,0 +1,56 @@
+.call-to-action {
+	display: block;
+	.cta-block {
+		cursor: pointer;
+		overflow: hidden;
+		position: relative;
+		img {
+			display: block;
+		}
+		.layer {
+			background-color: rgba(0, 0, 0, 0.5);
+			position: absolute;
+			top: 0;
+			left: 0;
+			height: 100%;
+			width: 100%;
+			z-index: 2;
+			opacity: 0;
+			visibility: hidden;
+			transition: 300ms ease-in-out;
+			span {
+				@include positionCenter();
+				font: {
+					family: $font;
+					size: $title-font-size;
+				}
+				color: $white;
+			}
+		}
+		.content {
+			z-index: 3;
+			display: block;
+			position: absolute;
+			bottom: -100%;
+			left: 0;
+			width: 100%;
+			padding: 10px;
+			background-color: $title-color;
+			transition: 400ms ease-in-out;
+			font: {
+				family: $font;
+				size: $text-font-size;
+			}
+			color: $white;
+		}
+		&:hover {
+			.layer {
+				opacity: 1;
+				visibility: visible;
+			}
+			.content {
+				bottom: 0;
+			}
+		}
+	}
+}

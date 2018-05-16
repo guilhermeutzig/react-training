@@ -1,0 +1,31 @@
+.banner {
+    background-image: url('../assets/banner.jpg');
+    padding-top: 200px;
+    padding-bottom: 200px;
+
+    h1 {
+        font: {
+            family: 'Roboto';
+            size: $title-font-size;
+        }
+        text-transform: uppercase;
+        color: $white;
+        margin-top: 0;
+        margin-bottom: 10px;
+    }
+
+    p {
+        font: {
+            family: 'Roboto';
+            size: $text-font-size;
+        }
+        color: $white;
+        margin-top: 0;
+        margin-bottom: 20px;
+    }
+
+    button {
+        @include button($white, $white);
+        margin-right: 10px;
+    }
+}

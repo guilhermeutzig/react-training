@@ -1,0 +1,19 @@
+{
+	"icons": [
+		{
+			"id": 1,
+			"link": "#",
+			"icon": "facebook"
+		},
+		{
+			"id": 2,
+			"link": "#",
+			"icon": "twitter"
+		},
+		{
+			"id": 3,
+			"link": "#",
+			"icon": "google"
+		}
+	]
+}

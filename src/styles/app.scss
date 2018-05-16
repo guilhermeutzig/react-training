@@ -1,0 +1,17 @@
+@import '~bootstrap/scss/bootstrap';
+// CORE
+@import './variables';
+@import './mixins';
+// COMPONENTS
+@import './components/header';
+@import './components/banner';
+@import './components/icon';
+@import './components/profile';
+@import './components/call-to-action';
+@import './components/form';
+// CONTAINERS
+@import './containers/section';
+@import './containers/social';
+@import './containers/modal';
+// PAGES
+@import './pages/index';

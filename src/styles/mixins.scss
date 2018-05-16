@@ -1,0 +1,70 @@
+@mixin sectionTitle() {
+	font: {
+		family: $font;
+		size: $title-font-size;
+	}
+	margin: {
+		top: 0;
+		bottom: 50px;
+	}
+	text-transform: uppercase;
+	position: relative;
+	padding-left: 22px;
+	&::before {
+		content: '';
+		position: absolute;
+		left: 0;
+		top: 0;
+		height: 100%;
+		width: 10px;
+	}
+}
+
+@mixin sectionTitleColors($color, $bg) {
+	color: $color;
+	&::before {
+		background-color: $bg;
+	}
+}
+
+@mixin button($color, $border) {
+	cursor: pointer;
+	border: 2px solid $color;
+	border-radius: 3px;
+	height: 45px;
+	width: 130px;
+	color: $border;
+	transition: 300ms ease-in-out;
+	text-transform: uppercase;
+	background-color: transparent;
+	font: {
+		family: $font;
+		size: $button-font-size;
+	}
+	&:hover {
+		background-color: $btn-hover-bg;
+		border-color: $btn-hover-bg;
+	}
+}
+
+@mixin mainText($color) {
+	font: {
+		family: $font;
+		size: $text-font-size;
+	}
+	color: $color;
+	margin: 0;
+}
+
+@mixin icon($icon, $width, $height) {
+	background-image: url('../assets/#{$icon}.png');
+	height: $height;
+	width: $width;
+}
+
+@mixin positionCenter() {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}

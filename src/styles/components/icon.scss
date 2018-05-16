@@ -1,0 +1,33 @@
+.icon {
+	display: block;
+	background-color: $light-bg;
+	height: 60px;
+	width: 60px;
+	transition: 300ms ease-in-out;
+	position: relative;
+	&.black {
+		background-color: $black;
+		&:hover {
+			background-color: $btn-black-hover-bg;
+		}
+	}
+	&:hover {
+		background-color: $lighter-bg;
+		transform: scale(1.05);
+	}
+	span {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		&.facebook {
+			@include icon('facebook', 13px, 23px);
+		}
+		&.twitter {
+			@include icon('twitter', 22px, 18px);
+		}
+		&.google {
+			@include icon('google', 13px, 23px);
+		}
+	}
+}

@@ -1,0 +1,39 @@
+form {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	font-family: $font;
+	font-size: $text-font-size;
+	label {
+		cursor: pointer;
+		display: flex;
+		align-items: center;
+	}
+	input:not([type='checkbox']) {
+		padding-left: 10px;
+		height: 45px;
+		border: 2px solid $lighter-bg;
+		border-radius: 3px;
+	}
+	input[type='checkbox'] {
+		cursor: pointer;
+		margin-left: 10px;
+	}
+	button {
+		@include button($btn-hover-bg, $title-color);
+	}
+	.hide {
+		opacity: 0;
+		visibility: hidden;
+	}
+
+	&.login-form {
+		padding: 40px 0;
+		display: block;
+
+		input {
+			display: block;
+			margin: 10px 0;
+		}
+	}
+}
