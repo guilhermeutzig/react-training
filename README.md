@@ -40,6 +40,7 @@ Inside the folder `json/` we have two files: `icons.json` and `users.json`. Insi
 We need it globally installed on our machine, so simply run this command:
 
 NPM: `npm install -g json-server`
+
 Yarn: `yarn global add json-server`
 
 After this, go to the folder `json/` inside the project and run the command:
